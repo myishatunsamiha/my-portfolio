@@ -284,7 +284,7 @@
 
     <!-- create profile -->
     <div class="flex flex-col lg:flex-row justify-center items-center m-8 md:m-14 my-24">
-        <div class="lg:w-1/2 relative">
+        <div class="lg:w-1/2 relative mt-20">
             <img src="./images/img2.png" alt=""
                 class="animate__animated animate__bounce animate__slow	2s animate__infinite	infinite">
 
@@ -360,19 +360,19 @@
 
     <!-- newsletter -->
     <div class="flex flex-col md:flex-row justify-center items-center h-96 rounded-3xl m-8 md:m-14 newsletter my-24">
-        <div class="md:w-2/5 md:pl-10 pb-5 md:pb-0">
+        <div class="md:w-2/5 md:pl-20 pb-5 md:pb-0 flex">
             <p class="font-semibold text-white text-shadow text-3xl text-center md:text-left">Never Want to Miss Any Job
                 News?</p>
         </div>
 
-        <div class="md:w-3/5">
-            <div class="container flex justify-center items-center">
+        <div class="md:w-3/5 flex flex-row justify-center">
+            <!-- <div class="container flex justify-center items-center">
                 <div class="relative">
                     <div class="absolute top-4 left-3">
                         <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
                     </div>
                     <input type="text"
-                        class="h-14 pl-8 pr-20 w-30 md:w-96 rounded-full z-0 focus:shadow focus:outline-none"
+                        class="h-14 pl-8 pr-20 w-20 md:w-96 rounded-full z-0 focus:shadow focus:outline-none"
                         placeholder="enter email">
                     <div class="absolute top-2 right-2">
 
@@ -381,7 +381,27 @@
 
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <form class="bg-white mx-auto form-field p-2 rounded-full hidden sm:inline-block">
+                <div class="form-field">
+                    <i class='fas fa-search pl-3 pt-2 text-gray-500' style='font-size:24px'></i><input type="text"
+                        placeholder="enter email..." class="p-2" style="max-width: 250px;">
+                </div>
+                <button
+                    class=" bg-[#F2994A] text-white px-3 py-1 rounded-full animate__animated animate__headShake animate__infinite	infinite">search</button>
+            </form>
+
+
+            <form class="bg-white mx-auto form-field p-2 rounded-full inline-block sm:hidden">
+                <div class="form-field">
+                    <i class='fas fa-search pl-1 pt-2 text-gray-500'></i><input type="text" placeholder="enter email..."
+                        class="p-2" style="max-width: 100px;">
+                </div>
+                <button
+                    class=" bg-[#F2994A] text-white px-1 py-1 rounded-full animate__animated animate__headShake animate__infinite	infinite">search</button>
+            </form>
+
         </div>
 
     </div>
