@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+
+    <!-- links for daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- for font awesome -->
+    <script src="https://kit.fontawesome.com/459454876f.js" crossorigin="anonymous"></script>
+
+    <!-- for animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-orange-100">
+    <!-- navbar -->
+    <div class="navbar bg-orange-100">
+        <div class="navbar-start">
+            <img src="./images/Jobs.png" alt="" height="50" width="50">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal p-0">
+                <li><a class="font-bold">Home</a></li>
+                <li><a class="font-bold">Employer</a></li>
+                <li><a class="font-bold">Candidate</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                    <li><a class="font-bold">Home</a></li>
+                    <li><a class="font-bold">Employer</a></li>
+                    <li><a class="font-bold">Candidate</a></li>
+                    <li><a class="btn btn-ghost border-0 rounded-3xl px-6">Login</a></li>
+                    <li><a
+                            class="btn bg-[#F2994A] border-0 rounded-3xl px-6 animate__animated animate__headShake animate__infinite	infinite">Sign
+                            Up</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden lg:flex">
+                <a class="btn btn-ghost border-0 rounded-3xl px-6">Login</a>
+                <a
+                    class=" btn bg-[#F2994A] border-0 rounded-3xl px-6 animate__animated animate__headShake animate__infinite	infinite">Sign
+                    Up</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="flex flex-col-reverse lg:flex-row justify-center items-center m-8 md:m-14 my-24">
+        <div class="lg:w-3/5">
+            <p class="font-semibold text-7xl mb-6 animate__animated animate__backInLeft">Find the job of
+                your <span
+                    class="font-bold text-[#F2994A]  animate__animated animate__backInLeft animate__infinite infinite">Dream</span>
+            </p>
+            <p class="text-[#4f4f4f91] text-lg font-light mb-12">Find You New Job Today! New Job Postings Everyday just
+                for
+                you,
+                browse the
+                job you
+                want and apply wherever you want.</p>
+
+            <p class="font-[500] text-2xl mb-6">Trending Jobs keyword :</p>
+            <p class="text-[#F2994A] font-bold mb-6 text-xs"><span class="mr-4">Web Designer</span><span
+                    class="mr-4">UI/UX
+                    Designer</span><span>Frontend</span></p>
+
+            <form class="bg-white mx-auto form-field p-2 rounded-full hidden sm:inline-block">
+                <div class="form-field">
+                    <i class='fas fa-search' style='font-size:24px'></i><input type="text"
+                        placeholder="title or keyword" class="p-2" style="max-width: 150px;">
+                </div>
+                <span class="my-8 mx-3" style="border:1px solid gray; background-color: gray; height: 500px;"></span>
+                <div class="form-field"><i class='fas fa-map-marker-alt' style='font-size:24px'></i>
+                    <input type="text" placeholder="Bandung, Indonesia" class="p-2" style="max-width: 150px;">
+                    <button
+                        class=" bg-[#F2994A] text-white px-3 py-1 rounded-full animate__animated animate__headShake animate__infinite	infinite">search</button>
+                </div>
+            </form>
+
+
+            <form class="bg-white mx-auto form-field p-2 rounded-full inline-block sm:hidden">
+                <div class="form-field">
+                    <i class='fas fa-search'></i><input type="text" placeholder="title or keyword" class="p-1"
+                        style="max-width: 50px;">
+                </div>
+                <span class="my-8 mx-1" style="border:1px solid gray; background-color: gray; height: 500px;"></span>
+                <div class="form-field"><i class='fas fa-map-marker-alt'></i>
+                    <input type="text" placeholder="Bandung, Indonesia" class="p-2" style="max-width: 50px;">
+                    <button
+                        class=" bg-[#F2994A] text-white px-2 py-1 rounded-full text-sm animate__animated animate__headShake animate__infinite	infinite">search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="lg:w-2/5 first-image-bg mb-6">
+            <img src="./images/img1.png" alt=""
+                class="animate__animated animate__pulse animate__slower 3s animate__infinite	infinite w-full">
+
+            <div
+                class="flex flex-col justify-center items-center job-vacancy bg-[#ffffff4f] p-1 sm:p-3 rounded-lg shadow-lg">
+                <p><i class="fa fa-briefcase" style="font-size:36px; color:#2F80ED;"></i></p>
+                <p class="font-semibold text-2xl">12.5K</p>
+                <p class="font-medium text-sm">Job Vacancy</p>
+            </div>
+
+            <div
+                class="hidden sm:flex flex-col justify-center items-center take-seconds bg-[#ffffffd2] p-1 sm:p-3 rounded-lg shadow-lg">
+                <p><i class="fa fa-bolt" style="font-size:36px; color:#F2994A;"></i></p>
+                <p class="font-medium text-sm">It only takes</p>
+                <p class="font-medium text-sm">a few seconds</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- well known companies -->
+    <div class="bg-white my-24">
+        <p class="text-2xl font-semibold text-center pb-16 pt-16 animate-bounce">Join Most Well Known <span
+                class="font-bold text-[#F2994A]">Companies</span>
+            Around The World</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 justify-items-center pb-28">
+            <img src="./images/slack.png" alt="" style="width: 156px; height:40px;" class="hover:animate-ping">
+            <img src="./images/microsoft.png" alt="" style="width: 232px; height:50px;" class="hover:animate-ping">
+            <img src="./images/google.png" alt="" style="width: 184px; height:60px;" class="hover:animate-ping">
+            <img src="./images/airbnb.png" alt="" style="width: 184px; height:58px;" class="hover:animate-ping">
+        </div>
+    </div>
+
+
+    <!-- create catagories -->
+    <div class="m-8 md:m-14 my-10">
+        <p class=" subtitle mb-4 text-center">Choose Categories</p>
+        <p class="title mb-24 text-center hover:animate-spin">Choose Categories</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+                class="card bg-base-100 shadow-xl p-6 catagories  animate__animated animate__headShake animate__slow	2s animate__infinite	infinite">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-bullhorn" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Marketing & Communication</p>
+                        <p class="font-normal available-jobs text-xs">58 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl p-6 catagories">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-pen-nib" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">UI/UX Design</p>
+                        <p class="font-normal available-jobs text-xs">120 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl p-6 catagories">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-hand-holding-usd" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Finance Management</p>
+                        <p class="font-normal available-jobs text-xs">230 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="card bg-base-100 shadow-xl p-6 catagories  animate__animated animate__headShake animate__slow	2s animate__infinite	infinite">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-file-code" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Web Development</p>
+                        <p class="font-normal available-jobs text-xs">100 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="card bg-base-100 shadow-xl p-6 catagories animate__animated animate__headShake animate__slow	2s animate__infinite	infinite">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-folder-open" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Project Management</p>
+                        <p class="font-normal available-jobs text-xs">87 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl p-6 catagories">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-handshake" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Business & Consulting</p>
+                        <p class="font-normal available-jobs text-xs">23 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl p-6 catagories">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-palette" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Graphic Designer</p>
+                        <p class="font-normal available-jobs text-xs">65 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="card bg-base-100 shadow-xl p-6 catagories  animate__animated animate__headShake animate__slow	2s animate__infinite infinite">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-col">
+                        <div class="w-1/2">
+                            <p><i class="fa fa-youtube-play" style="font-size:24px"></i></p>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="ml-9">
+                        <p class="font-bold text-base mb-3">Video Editor</p>
+                        <p class="font-normal available-jobs text-xs">120 Jobs Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- create profile -->
+    <div class="flex flex-col lg:flex-row justify-center items-center m-8 md:m-14 my-24">
+        <div class="lg:w-1/2 relative">
+            <img src="./images/img2.png" alt=""
+                class="animate__animated animate__bounce animate__slow	2s animate__infinite	infinite">
+
+            <div
+                class="hidden sm:flex flex-col justify-center items-center notification bg-[#ffffff96] p-1 sm:p-3 rounded-lg shadow-lg">
+                <p><i class="fa fa-bell" style="font-size:24px; color:rgb(161, 12, 12)"></i></p>
+                <p class="font-medium text-sm">Create profile</p>
+                <p class="font-medium text-sm">get notified</p>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 lg:pl-6">
+            <p class="subtitle mb-4">Create Profile</p>
+            <p class="title mb-8 hover:animate-spin">Build Your Personal
+                Account Profile</p>
+            <p class="para mb-24">Create an account for the job information you want, get daily notifications and you
+                can easily apply directly to the
+                company you want and create an account now for free</p>
+
+            <button
+                class=" btn bg-[#F2994A] border-0 rounded-3xl px-6 animate__animated animate__headShake animate__slow	2s animate__infinite	infinite">Create
+                Account</button>
+        </div>
+    </div>
+
+
+
+    <!-- how it works -->
+    <div class="flex flex-col lg:flex-row justify-center items-center m-8 md:m-14 my-24">
+        <div class="lg:w-1/2">
+            <p class="subtitle mb-4">How it works</p>
+            <p class="title mb-8 hover:animate-spin">Easy Step To Find and
+                Apply Your Dream Job</p>
+            <p class="para mb-9">We will help you to find your dream job easily, let us
+                help you manage everything you need</p>
+
+            <div
+                class="bg-white p-6 rounded-3xl shadow-2xl animate__animated animate__pulse animate__infinite	infinite">
+                <p class="para text-[#F2994A] font-bold">Easy to upload Your Best CV and Portfolio</p>
+                <p class="mb-12">You can upload your resume, CV, and Portfolio directly to Job</p>
+
+                <p class="para text-[#F2994A] font-bold">You Will Be Notified With All Updates</p>
+                <p class="mb-12">Get notified about new job vacancies. scheduled
+                    interview and job application</p>
+
+                <p class="para text-[#F2994A] font-bold">Apply for your dream job from the best company</p>
+                <p class="mb-12">We will provide recommendations for your choice companies from all over the world</p>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 relative">
+            <img src="./images/img3.png" alt=""
+                class="animate__animated animate__pulse animate__slow	2s animate__infinite	infinite">
+
+            <div
+                class="hidden sm:flex flex-col justify-center items-center upload-cv bg-[#ffffffd0] p-1 sm:p-3 rounded-lg shadow-lg">
+                <p><i class="fa fa-upload" style="color:#2F80ED"></i><span class="font-bold ml-2">Upload
+                        your
+                        cv</span></p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center hired bg-[#ffffffc7] p-1 sm:p-3 rounded-lg shadow-lg">
+                <p><i class="fa fa-check-circle" style="font-size:24px; color:#219653;"></i><span
+                        class="font-bold ml-2">Your are Hired</span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- newsletter -->
+    <div class="flex flex-col md:flex-row justify-center items-center h-96 rounded-3xl m-8 md:m-14 newsletter my-24">
+        <div class="md:w-2/5 md:pl-10 pb-5 md:pb-0">
+            <p class="font-semibold text-white text-shadow text-3xl text-center md:text-left">Never Want to Miss Any Job
+                News?</p>
+        </div>
+
+        <div class="md:w-3/5">
+            <div class="container flex justify-center items-center">
+                <div class="relative">
+                    <div class="absolute top-4 left-3">
+                        <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
+                    </div>
+                    <input type="text"
+                        class="h-14 pl-8 pr-20 w-30 md:w-96 rounded-full z-0 focus:shadow focus:outline-none"
+                        placeholder="enter email">
+                    <div class="absolute top-2 right-2">
+
+                        <button
+                            class="h-10 w-20 text-white rounded-full bg-[#F2994A] hover:bg-[#cf6e18] animate__animated animate__headShake animate__infinite	infinite">Search</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 bg-white p-10 bg-base-200 text-base-content">
+        <div class="sm:col-span-2 lg:col-span-1">
+            <img src="./images/Jobs.png" alt="" height="40" width="40">
+            <p class="text-gray-500 font-light text-sm">Jobs is the largest talent platform in Southeast Asia and Taiwan
+                for
+                career
+                development and recruitment.
+            </p>
+        </div>
+        <div>
+            <p class="text-black font-bold mb-3">Employer</p>
+            <p class="mb-2"><a class="link link-hover">About Us</a></p>
+            <p class="mb-2"><a class="link link-hover">Careers</a></p>
+            <p class="mb-2"><a class="link link-hover">Blog</a></p>
+        </div>
+        <div>
+            <p class="text-black font-bold mb-3">Find Vacancy Based On</p>
+            <p class="mb-2"><a class="link link-hover">Help Center</a></p>
+            <p class="mb-2"><a class="link link-hover">Job Location</a></p>
+            <p class="mb-2"><a class="link link-hover">Company Name</a></p>
+        </div>
+        <div>
+            <p class="text-black font-bold mb-3">Address</p>
+            <p class="mb-2"><a class="link link-hover">hello@jobsearch.com</a></p>
+            <p class="mb-2"><a class="link link-hover">JL. Setiabudhi No. 193 Sukasari, Bandung
+                    West Java, Indonesia</a>
+        </div>
+    </footer>
+    <footer class="footer bg-white footer-center p-4 bg-base-300 text-base-content">
+        <div>
+            <p>Copyright © 2022 - All right reserved by Job Search Ltd</p>
+        </div>
+    </footer>
+
+
+    <!-- for AOS animation -->
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>
